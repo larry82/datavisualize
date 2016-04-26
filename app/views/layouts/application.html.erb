@@ -5,9 +5,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
 </head>
 <body>
-
+	<% if params[:controller] == "welcome" && params[:action] == "index" %>
+		<%= render 'layouts/nav' %>
+	<% else %>
+		<%= render 'layouts/nav_lighten' %>
+	<% end %>
 <%= yield %>
 
 </body>

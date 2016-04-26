@@ -1,0 +1,40 @@
+#nav-bg{
+	opacity: 0.4;
+}
+#nav{
+	height: 50px;
+	.btn{
+		text-decoration: none;
+		margin: 10px 30px 10px 0px;
+		padding: 5px 10px;
+		display: inline-block;
+		border-radius: 5px;
+		border: 1px solid white;
+		// opacity: 1;
+		// background-color: lighten($black,20%);
+		&:hover{
+			color: $black;
+			border-color: $black;
+			background-color: white;
+		}
+	}
+}
+
+#nav-lighten{
+	height: 50px;
+	.btn{
+		text-decoration: none;
+		margin: 10px 30px 10px 0px;
+		padding: 5px 10px;
+		display: inline-block;
+		border-radius: 5px;
+		border: 1px solid $black;
+		// opacity: 1;
+		// background-color: lighten($black,20%);
+		&:hover{
+			color: $black;
+			border-color: $black;
+			background-color: white;
+		}
+	}
+}

@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+gem "twitter-bootstrap-rails"
+gem "d3-rails"
+gem 'metrics-graphics-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

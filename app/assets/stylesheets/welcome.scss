@@ -1,0 +1,22 @@
+#index{
+	margin-top: -50px;
+	background-image: image-url("bg.png");
+	background-size: 100%;
+	// background-position: center;
+	background-repeat: no-repeat; 
+	transition: background 0.1s linear;
+}
+#index2{
+	margin-top: -50px;
+	background-image: image-url("bg2.png");
+	background-size: 100%;
+	// background-position: center;
+	background-repeat: no-repeat; 
+	transition: background 0.1s linear;
+}
+.btn-index{
+	&:hover{
+		border-color: $blue;
+		color: $blue;
+	}
+}

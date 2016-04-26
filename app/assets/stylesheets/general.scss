@@ -1,0 +1,61 @@
+$darkblue:  rgba(0,90,200,0.6);
+$blue:  #0077AA;
+$black: #343434;
+body{
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	background-color: lightgray;
+}
+
+.bg-black{
+	background-color: $black;
+}
+.bg-white{
+	background-color: white;
+}
+
+.font{
+	&-black{
+		color: $black;
+	}
+	&-white{
+		color: white;
+	}
+	&-darkblue{
+		color: $darkblue;
+	}
+	&-18{
+		font-size: 18px;
+	}
+	&-16{
+		font-size: 16px;
+	}
+}
+
+.btn{
+	&-bg{
+		width:200px;
+		height:40px;
+		border: 1px solid $black;
+	}
+	&-fill-blue{
+		// &:hover{
+		// 	background-color: rgba(0,90,200,0.6);
+		// 	color: $black!important;
+		// 	border-color: $black!important;
+		// }
+		&:hover{
+			// background-color: rgba(0,90,200,0.6);
+			color: $darkblue;
+			border: 1px solid;
+			border-color: $darkblue;
+		}
+		
+	}
+}
+
+@import 'nav';
+@import 'projects';
+@import 'normalize';
+@import 'welcome';
+
