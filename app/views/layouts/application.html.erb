@@ -6,12 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro">
 </head>
 <body>
 	<% if params[:controller] == "welcome" && params[:action] == "index" %>
-		<%= render 'layouts/nav' %>
+		<%= render 'layouts/nav',nav_type:"black",font_color:"white",show_logo:true %>
 	<% else %>
-		<%= render 'layouts/nav_lighten' %>
+		<%= render 'layouts/nav',nav_type:"black",font_color:"white",show_logo:true %>
 	<% end %>
 <%= yield %>
 

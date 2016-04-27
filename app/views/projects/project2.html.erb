@@ -1,13 +1,26 @@
-<div class="container">
-	<div class="row" style="padding-top:50px;">
-		<div class="col-md-8 col-md-offset-2" id="project2-graph">
+<div class="bg-blur" style=" margin-top:-50px;height:720px;" id="show-projects">
+	<div class="container" id="project2">
+		<div class="row" style="padding-top:50px;">
+			<div class="col-md-12 title">
+				Project 2 : Side Slope
+			</div>
+			<div class="col-md-12 sub-title">
+				We count Daily Rainfall and made these graph by datas.
+			</div>
+
+	<!-- 繪圖區 -->
+			<div class="col-md-10 col-md-offset-1 bg-show-project">
+				<div class="col-md-10 col-md-offset-1" id="project2-graph">
+				
+				</div>
+				<div class="col-md-8 col-md-offset-2 text-center" id="graph-type-btns">
+					<%= graph_type_link("Rainfall","Rainfall","累計雨量(mm)" ) %>
+					<%= graph_type_link("Distance","Distance","地滑距離(cm)" ) %>
+					<%= graph_type_link("GroundWater","Ground Water","地下水位(m)" ) %>
+					<%= graph_type_link("Daily_Rainfall","Daily Rainfall","累計雨量(mm)" ) %>
+				</div>
+			</div>
 			
-		</div>
-		<div class="col-md-8 col-md-offset-2 text-center" id="graph-type-btns">
-			<%= graph_type_link("Rainfall","累計雨量","累計雨量(mm)" ) %>
-			<%= graph_type_link("Distance","地滑距離","地滑距離(cm)" ) %>
-			<%= graph_type_link("GroundWater","地下水位","地下水位(m)" ) %>
-			<%= graph_type_link("Daily_Rainfall","日累計雨量","累計雨量(mm)" ) %>
 		</div>
 	</div>
 </div>

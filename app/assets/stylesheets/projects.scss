@@ -1,3 +1,72 @@
-#graph-type-btns{
-	
+
+.comming-soon-cards{
+	margin-top: 50px;
+	height:300px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: $opacity_black;
+	padding: 15px;
+	opacity: 0.6;
+	.content{
+		border: 2px dashed white;
+		height:270px;
+		.text{
+			margin-top: 120px;
+			font-size:16px;
+			color: white;
+		}
+	}
 }
+.project-cards{
+	margin-top: 50px;
+	height:300px;
+	border-radius: 4px;
+	opacity: 0.8;
+	text-align: center;
+	padding: 0;
+	background-color: $opacity_black;
+	padding:0px;
+	.project_poster{
+		border-radius: 4px 4px 0  0;
+	}
+	.title{
+		margin-top: 20px;
+		font-size: 20px;
+		opacity: 1;
+		color: $black;
+		color: white;
+	}
+	.date{
+		margin-top: 10px;
+		font-size: 14px;
+		color: $black;
+		color: white;
+	}
+}
+
+.bg-show-project{
+	background-color: $opacity_white;
+	border-radius: 5px;
+	padding: 25px;
+	margin-top: 30px;
+}
+
+#show-projects{
+	.title{
+		margin-top: 30px;
+		font-size: 30px;
+		color: white;
+		text-align: center;
+	}
+	.sub-title{
+		margin-top: 10px;
+		font-size: 18px;
+		color: white;
+		text-align: center;
+	}
+}
+
+
+
+
+

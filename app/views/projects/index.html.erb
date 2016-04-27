@@ -1,7 +1,49 @@
-<div class="container">
-	<div class="row" style="padding-top:50px;">
-		<div class="col-md-12">
-			lol
+<div class="bg-blur" style=" margin-top:-50px;">
+	<div class="container">
+		<div class="row" style="padding-top:50px; margin-bottom: 50px;">
+			<div class="col-md-12 text-center font-30 font-white font-thin" style="margin-top:30px;">
+				Meet our babies.
+			</div>
+			<div class="col-md-12 text-center font-18 font-white font-thin" style="margin-top:30px;">
+				Oh my God! You got the eyes of your mother. You are a wizard, Harry.
+			</div>
+			
+
+			<div class="col-md-10 col-md-offset-1">
+	<!-- 第一個作業 -->
+				<div class="col-md-3 col-xs-6" style="">
+					<div class="col-md-12 project-cards">
+						<%= image_tag("project1_poster.jpg", :alt => "project1_poster",width:"100%",class:"project_poster") %>
+						<div class="col-md-12 title">1. Death Rate</div>
+						<div class="col-md-12 date">Born on: 2016-04-10</div>
+					</div>
+				</div>
+	<!-- 第一個作業：結束 -->
+	<!-- 第二個作業 -->
+				<div class="col-md-3 col-xs-6" style="">
+					<%= link_to project2_projects_path do %>
+						<div class="col-md-12 project-cards">
+							<%= image_tag("project2_poster.jpg", :alt => "project1_poster",width:"100%",class:"project_poster") %>
+							<div class="col-md-12 title">2. Side Slope</div>
+							<div class="col-md-12 date">Born on: 2016-04-20</div>
+						</div>
+					<% end %>
+				</div>
+	<!-- 第二個作業：結束 -->
+	<!-- 空白 -->
+				<% (1..6).each do |i| %>
+					<div class="col-md-3 col-xs-6" style="">
+						<div class="col-md-12 comming-soon-cards">
+							<div class="col-md-12 content">
+								<div class="col-md-12 text">
+									Comming Soon
+								</div>
+							</div>
+						</div>
+					</div>
+				<% end %>
+	<!-- 空白結束 -->
+			</div>
 		</div>
 	</div>
 </div>
