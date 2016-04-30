@@ -1,11 +1,11 @@
 <div class="<%= "bg-"+nav_type %>" id="<%= "nav-"+nav_type %>">
 	<div class="container" id="nav">
 		<div class="row">
-			<div class="col-md-4" style="<%= "visibility: hidden;" unless show_logo %>">
+			<div class="col-xs-4" style="<%= "visibility: hidden;" unless show_logo %>">
 				<%= image_tag("12.png", :alt => "12",id:"logo",height:"30") %>
 				<%= link_to "Group12",welcome_index_path ,class:"font-white",id:"group-name" %>
 			</div>
-			<div class="col-md-8 text-right font-14">
+			<div class="col-xs-8 text-right font-14">
 				<%= link_to "Projects",projects_path ,class:"btn  font-#{font_color} " %>
 				<%= link_to "Members",projects_path ,class:"btn  font-#{font_color} " %>
 				<%= link_to "Home",welcome_index_path ,class:"btn  font-#{font_color} " %>

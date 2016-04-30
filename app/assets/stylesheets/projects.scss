@@ -1,7 +1,6 @@
 
 .comming-soon-cards{
 	margin-top: 50px;
-	height:300px;
 	border-radius: 4px;
 	text-align: center;
 	background-color: $opacity_black;
@@ -19,13 +18,13 @@
 }
 .project-cards{
 	margin-top: 50px;
-	height:300px;
 	border-radius: 4px;
 	opacity: 0.8;
 	text-align: center;
 	padding: 0;
 	background-color: $opacity_black;
 	padding:0px;
+	padding-bottom: 15px;
 	.project_poster{
 		border-radius: 4px 4px 0  0;
 	}
