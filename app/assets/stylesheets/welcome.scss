@@ -1,4 +1,43 @@
-
+@media screen and (max-width: 980px){
+	#index{
+		display: none;
+	}
+	#nav-black{
+		display: none;
+	}
+	#footer{
+		display: none;
+	}
+	body{
+		height: 100%;
+		background-image: image-url("bg_blur.jpg");
+		background-repeat: no-repeat; 
+	}
+	.bg-blur{
+		background-image: none;
+	}
+	#title-mobile{
+		text-align: left;
+		margin-top: 500px;
+		h1{
+			color:white;
+			font-size: 100px;
+		}
+	}
+	.btn-index-moblie{
+		color: white;
+		width:400px;
+		height:70px;
+		font-size: 30px;
+		border: 5px solid white;
+		&:hover{
+			border-color: $black;
+			color: white;
+			background-color: $darkblue;
+		}
+		
+	}
+}
 
 
 
@@ -10,6 +49,7 @@
 	transition: background 0.2s linear;
 
 }
+
 .btn-index{
 	color: black;
 	&:hover{

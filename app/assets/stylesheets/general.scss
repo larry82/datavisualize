@@ -20,6 +20,7 @@ body{
 .bg-blur{
 	background-image: image-url("bg_blur.jpg");
 	background-size: cover;
+	height: 100%;
 	// background-position: center;
 	background-repeat: no-repeat; 
 	transition: background 0.1s linear;
