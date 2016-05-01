@@ -33,15 +33,21 @@
 				<%= image_tag("mobile_menu_close_icon.png", :alt => "mobile_menu_close_icon",id:"logo",width:"50") %>
 			</div>
 			
-			<div class="col-xs-10 col-xs-offset-2 bd-right-red btn-nav-mobile" ,data-color="#E8837E"}>
-				<%= link_to "Home",welcome_index_path ,class:"btn-nav-mobile-link font-white" %>
-			</div>
-			<div class="col-xs-10 col-xs-offset-2 bd-right-blue btn-nav-mobile" ,data-color="#ACBA9A"}>
-				<%= link_to "Projects",projects_path ,class:"btn-nav-mobile-link font-white" %>
-			</div>
-			<div class="col-xs-10 col-xs-offset-2 bd-right-green btn-nav-mobile" ,data-color="#749D9B"}>
-				<%= link_to "Members",projects_path ,class:"btn-nav-mobile-link font-white" %>
-			</div>
+			<%= link_to welcome_index_path ,class:"btn-nav-mobile-link font-white" do %>
+				<div class="col-xs-12 bd-right-red btn-nav-mobile font-white" ,data-color="#E8837E"}>
+					Home
+				</div>
+			<% end %>
+			<%= link_to projects_path ,class:"btn-nav-mobile-link font-white" do %>
+				<div class="col-xs-12 bd-right-blue btn-nav-mobile font-white" ,data-color="#ACBA9A"}>
+					Project
+				</div>
+			<% end %>
+			<%= link_to projects_path ,class:"btn-nav-mobile-link font-white" do %>
+				<div class="col-xs-12 bd-right-green btn-nav-mobile font-white" ,data-color="#749D9B"}>
+					Members
+				</div>
+			<% end %>
 			<div class="col-xs-10 col-xs-offset-2 bd-right-black text-left font-white btn-nav-mobile" id="btn-close-mobile-menu">
 				&nbsp
 			</div>

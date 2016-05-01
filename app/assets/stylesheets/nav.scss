@@ -43,28 +43,25 @@
 		margin-left: 150px;
 	}
 	.btn-nav-mobile{
-		padding: 40px 0px;
+		padding: 40px 0px 40px 68px;
 		font-size: 60px;
 	}
-	.btn-nav-mobile-link:focus{
-		text-decoration: none !important;
-		color:white !important;
-	}
+
 	.bd-right-red{ 
 		border-right: 40px solid $bd-right-red;
-		&:focus{
+		&:focus,&:hover{
 			background-color: $bd-right-red !important;
 		}
 	}
 	.bd-right-blue{ 
 		border-right: 40px solid $bd-right-blue;
-		&:focus{
+		&:focus,&:hover{
 			background-color: $bd-right-blue !important;
 		}
 	}
 	.bd-right-green{ 
 		border-right: 40px solid $bd-right-green;
-		&:focus{
+		&:focus,&:hover{
 			background-color: $bd-right-green !important;
 		}
 	}
