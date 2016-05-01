@@ -9,12 +9,8 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro">
 </head>
 <body>
-	<% if params[:controller] == "welcome" && params[:action] == "index" %>
-		<%= render 'layouts/nav',nav_type:"black",font_color:"white",show_logo:true %>
-	<% else %>
-		<%= render 'layouts/nav',nav_type:"black",font_color:"white",show_logo:true %>
-	<% end %>
-<%= yield %>
-  <%= render 'layouts/footer' %>
+  	<%= render 'layouts/nav' %>
+  <%= yield %>
+    <%= render 'layouts/footer' %>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 #nav{
 	height: 50px;
 	#logo{
@@ -25,6 +26,49 @@
 			font-weight: 700;
 		}
 	}
+}
+
+#nav-mobile-menu-btn{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color:white;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+#nav-mobile{
+	display: none;
+	background-color: $black;
+	.container{
+		margin-left: 150px;
+	}
+	.btn-nav-mobile{
+		padding: 40px 0px;
+		font-size: 60px;
+	}
+	.btn-nav-mobile-link:focus{
+		text-decoration: none !important;
+		color:white !important;
+	}
+	.bd-right-red{ 
+		border-right: 40px solid $bd-right-red;
+		&:focus{
+			background-color: $bd-right-red !important;
+		}
+	}
+	.bd-right-blue{ 
+		border-right: 40px solid $bd-right-blue;
+		&:focus{
+			background-color: $bd-right-blue !important;
+		}
+	}
+	.bd-right-green{ 
+		border-right: 40px solid $bd-right-green;
+		&:focus{
+			background-color: $bd-right-green !important;
+		}
+	}
+	.bd-right-black{ border-right: 40px solid $black;}
 }
 
 #nav-black{

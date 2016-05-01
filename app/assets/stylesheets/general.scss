@@ -3,12 +3,19 @@ $blue:  #0077AA;
 $black: #343434;
 $opacity_black: rgba(0,0,0,0.4);
 $opacity_white: rgba(225,225,225,0.6);
+$bd-right-red: #E8837E;
+$bd-right-blue: #ACBA9A;
+$bd-right-green: #749D9B;
 
 body{
 	font-family: 'Source Sans Pro', serif;
 	font-size: 14px;
 	background-color: white;
 	letter-spacing: 1px;
+}
+
+.glyphicon {
+   font-family:'Glyphicons Halflings' !important;
 }
 
 .bg-black{

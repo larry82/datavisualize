@@ -1,16 +1,50 @@
-<div class="<%= "bg-"+nav_type %>" id="<%= "nav-"+nav_type %>">
+<div class="bg-black" id="nav-black">
 	<div class="container" id="nav">
 		<div class="row">
-			<div class="col-xs-4" style="<%= "visibility: hidden;" unless show_logo %>">
+			<div class="col-xs-4" style="">
 				<%= image_tag("12.png", :alt => "12",id:"logo",height:"30") %>
 				<%= link_to "Group12",welcome_index_path ,class:"font-white",id:"group-name" %>
 			</div>
 			<div class="col-xs-8 text-right font-14">
-				<%= link_to "Projects",projects_path ,class:"btn  font-#{font_color} " %>
-				<%= link_to "Members",projects_path ,class:"btn  font-#{font_color} " %>
-				<%= link_to "Home",welcome_index_path ,class:"btn  font-#{font_color} " %>
+				<%= link_to "Projects",projects_path ,class:"btn  font-white " %>
+				<%= link_to "Members",projects_path ,class:"btn  font-white " %>
+				<%= link_to "Home",welcome_index_path ,class:"btn  font-white " %>
 			</div>
+		</div>
+	</div>
+</div>
+<div id="nav-mobile-menu-btn">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-right font-white">
+				<%= image_tag("mobile_menu_icon.png", :alt => "mobile_menu_icon",id:"logo",width:"50") %>
+			</div>
+		</div>
+	</div>
+</div>
 
+<div class="bg-black" id="nav-mobile" style="">
+	<div class="">
+		<div class="row">
+			<!-- <div class="col-xs-8 col-xs-offset-2 font-white" id="btn-nav-mobile">
+				Group12
+			</div> -->
+			<div class="col-xs-10 col-xs-offset-2 text-right bd-right-black btn-nav-mobile" id="btn-close-mobile-menu" style="padding-right:120px;">
+				<%= image_tag("mobile_menu_close_icon.png", :alt => "mobile_menu_close_icon",id:"logo",width:"50") %>
+			</div>
+			
+			<div class="col-xs-10 col-xs-offset-2 bd-right-red btn-nav-mobile" ,data-color="#E8837E"}>
+				<%= link_to "Home",welcome_index_path ,class:"btn-nav-mobile-link font-white" %>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 bd-right-blue btn-nav-mobile" ,data-color="#ACBA9A"}>
+				<%= link_to "Projects",projects_path ,class:"btn-nav-mobile-link font-white" %>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 bd-right-green btn-nav-mobile" ,data-color="#749D9B"}>
+				<%= link_to "Members",projects_path ,class:"btn-nav-mobile-link font-white" %>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 bd-right-black text-left font-white btn-nav-mobile" id="btn-close-mobile-menu">
+				&nbsp
+			</div>
 		</div>
 	</div>
 </div>

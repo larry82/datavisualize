@@ -8,6 +8,9 @@
 	#footer{
 		display: none;
 	}
+	#nav-mobile-menu-btn{
+		display: block;
+	}
 	body{
 		height: 100%;
 		background-image: image-url("bg_blur.jpg");
@@ -39,7 +42,9 @@
 	}
 }
 
-
+@media screen and (min-width: 981px){
+	#nav-mobile-menu-btn{ display: none;}
+}
 
 #index{
 	margin-top: -50px;
